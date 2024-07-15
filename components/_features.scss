@@ -1,0 +1,38 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  &__img {
+    max-width: 100%;
+  }
+  &__pic {
+    max-width: 100%;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+  &__heading {
+    width: 380px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__image {
+    width: 20px;
+    height: 20px;
+  }
+  &__p {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-regular);
+  }
+}

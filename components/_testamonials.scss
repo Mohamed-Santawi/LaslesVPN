@@ -1,0 +1,102 @@
+.testamonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    &__head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__title {
+      width: 448px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      width: 555px;
+      margin-bottom: 60px;
+    }
+    &__columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 50px;
+      margin-bottom: 60px;
+    }
+    &__column {
+      border: 2px solid var(--border-secodColor);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    &__heads {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    &__box {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &__nameImage {
+      width: 50px;
+      height: 50px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+    &__country {
+      font-size: var(--font-size-14);
+      font-weight: var(--font-weight-regular);
+    }
+    &__columnRating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &__rating {
+      font-size: var(--font-size-16);
+      font-weight: var(--font-weight-regular);
+      color: var(--color-blue);
+    }
+    &__star {
+      width: 16px;
+      height: 16px;
+    }
+    &__content {
+      color: var(--color-blue);
+      font-size: var(--font-size-16);
+      font-weight: var(--font-weight-regular);
+      line-height: 30px;
+    }
+    &__slider {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__points {
+      display: flex;
+      gap: 15px;
+      width: 135px;
+      height: 15px;
+    }
+    &__arows {
+      display: flex;
+      cursor: pointer;
+      margin-top: -20px;
+    }
+    &__arrow {
+      width: 40px;
+      height: 40px;
+    }
+    &__arrowRight {
+      width: 100px;
+      height: 100px;
+      margin-top: -20px;
+    }
+  }
+  .firstActive {
+    border-color: var(--color-button);
+  }
+  

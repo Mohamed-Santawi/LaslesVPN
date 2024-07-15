@@ -1,0 +1,68 @@
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+p {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  line-height: 30px;
+}
+img {
+  max-width: 100%;
+}
+h2 {
+  font-size: var(--font-size-35);
+  font-weight: var(--font-weight-medium);
+  line-height: 50px;
+  color: var(--color-blue);
+  text-transform: capitalize;
+}
+h4 {
+  font-size: var(--font-size-18);
+  color: var(--color-blue);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  // margin-block: 30px;
+}
+h5 {
+  font-size: var(--font-size-18);
+  color: var(--color-blue);
+  font-weight: var(--font-weight-medium);
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+body {
+  font-family: var(--font-family-rubik);
+  overflow-x: hidden;
+}
+.container {
+  display: grid;
+  row-gap: 11rem;
+  margin: 0 auto ;
+  max-width: calc(var(--container-width) + var(--gutter) * 2);
+  padding-inline: var(--gutter);
+}
+span {
+  font-size: var(--font-size-25);
+  font-weight: var(--font-weight-medium);
+}
+.section__flex {
+  display: flex;
+}
