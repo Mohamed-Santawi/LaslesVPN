@@ -19,42 +19,69 @@
     padding: 0;
   }
   .header {
-    padding: 5px 0 17px;
+    padding: 10px 0;
     margin-bottom: 40px;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    
-    &::before {
-      z-index: -1;
-      // border-bottom: none;
-    }
+    // position: relative;
+    // justify-content: space-between;
+    // align-items: center;
+
+    // &::before {
+    //   z-index: -1;
+    //   // border-bottom: none;
+    // }
     &__checkbox {
       display: none;
     }
     &__toggle {
       display: block;
     }
+    &__navReg {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-out;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 35px;
+      padding: 2rem 0;
+      width: 100vw;
+      border-bottom: 0.1rem solid var(--color-text);
+      background-color: var(--color-white);
+      z-index: -1;
+      transition: var(--transition-timing);
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      // flex: 0;
+      // top: 10px;
+      // position: absolute;
+      // width: 100vw;
+      // padding: 3rem 0;
+      // border-bottom: 0.1rem solid var(--color-text);
+      // background-color: var(--color-white);
+      // z-index: -2;
+    }
   }
   .logo {
     gap: 10px;
     &__text {
-      font-size: var(--font-size-16);
+      font-size: var(--font-size-20);
     }
     &__img {
       width: 25px;
       height: 25px;
     }
   }
-  .navigation {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    padding: 2rem 0;
-    border-bottom: 0.1rem solid var(--color-text);
-    background-color: var(--color-white);
-    z-index: -2;
-  }
+  // .navigation {
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100vw;
+  //   padding: 2rem 0;
+  //   border-bottom: 0.1rem solid var(--color-text);
+  //   background-color: var(--color-white);
+  //   z-index: -2;
+  // }
   .navigation__list {
     gap: 20px;
     justify-content: center;
@@ -66,15 +93,15 @@
     align-self: center;
     cursor: pointer;
     z-index: 0;
-    position: absolute;
-    top: 5px;
-    right: 20px;
+    // position: absolute;
+    // top: 5px;
+    // right: 20px;
   }
   .register {
     display: flex;
-    width: 40%;
-    position: absolute;
-    right: 60px;
+    width: 100%;
+    // position: absolute;
+    // right: 60px;
     &__link {
       color: var(--color-blue);
       font-size: var(--font-size-16);
@@ -108,9 +135,13 @@
   .header:has(.header__checkbox:checked) .burger-menu__bar:nth-child(3) {
     transform: translateY(-7px) rotate(-40deg);
   }
-  .header__checkbox:checked + .navigation {
-    top: 100%;
+  .header__checkbox:checked ~ .header__navReg {
+    opacity: 1;
+    visibility: visible;
   }
+  // .header__checkbox:checked + .header__navReg {
+  //   top: 10%;
+  // }
   .section__flex {
     display: flex;
     flex-direction: column;
@@ -129,25 +160,45 @@
   .intro {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     &__heading {
       font-size: var(--font-size-22);
       line-height: 10px;
     }
     &__para {
       margin-top: 20px;
+      text-align: center;
       // width: 70%;
     }
     &__btn {
       margin: 20px 0 30px;
     }
+    &__image {
+      max-width: 100%;
+      order: -1;
+      margin-bottom: 30px;
+    }
   }
   // Start Counter
   .counter {
-    margin-top: 70px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 30px;
     &::after {
       height: 130px;
-      left: 0;
+      left: 25px;
       top: 28px;
+      width: 90%;
     }
     &__column {
       display: flex;
@@ -158,18 +209,18 @@
       }
     }
     &__img {
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
     }
     &__countBox {
       display: flex;
       flex-direction: column;
     }
     &__countImg {
-      font-size: var(--font-size-20);
+      font-size: var(--font-size-18);
     }
     &__count {
-      font-size: var(--font-size-20);
+      font-size: var(--font-size-18);
       margin-top: -8px;
     }
   }
@@ -177,8 +228,16 @@
   // End Intro
   // Start Features
   .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      max-width: 100%;
+    }
     &__text {
       gap: 10px;
+      width: 100%;
     }
     &__list {
       gap: 10px;
@@ -189,6 +248,9 @@
     &__image {
       width: 17px;
       height: 17px;
+    }
+    &__heading {
+      text-align: center;
     }
   }
   // End Features
