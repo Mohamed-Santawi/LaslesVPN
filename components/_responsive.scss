@@ -1,19 +1,366 @@
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   html {
     font-size: 8px;
   }
+  .container {
+    row-gap: 8rem;
+  }
+  p {
+    line-height: 1.7;
+  }
+  h2 {
+    line-height: 1.7;
+  }
+  .section {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  // Start Intro
+  .intro {
+    column-gap: 30px;
+    &__heading {
+      font-size: var(--font-size-40);
+      line-height: 1.6;
+    }
+    &__btn {
+      padding-inline: 50px;
+      margin-top: 40px;
+    }
+    &__img {
+      max-width: 80%;
+    }
+  }
+  // Start counter
+  .counter {
+    max-width: 90%;
+    &__column {
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child)::after {
+        height: 120px;
+        left: 200px;
+        top: -25px;
+      }
+    }
+    &__img {
+      width: 40px;
+      height: 40px;
+    }
+    &__countImg {
+      font-size: var(--font-size-24);
+    }
+    &__count {
+      font-size: var(--font-size-20);
+    }
+  }
+  // End counter
+  // End Intro
+  // Start Features
+  .features {
+    column-gap: 20px;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: start;
+      align-items: start;
+    }
+    &__img {
+      max-width: 85%;
+    }
+    &__heading {
+      max-width: 85%;
+    }
+    &__list {
+      gap: 10px;
+    }
+    &__item {
+      gap: 10px;
+    }
+    &__image {
+      width: 20px;
+      height: 20px;
+    }
+    &__p {
+      max-width: 100%;
+    }
+    &__para {
+      width: 80%;
+      margin-top: 10px;
+    }
+  }
+  // End Features
+  // Start Plan
+  .plan {
+    &::before {
+      width: 100vw;
+    }
+  }
+  .categories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-self: center;
+    align-self: center;
+    &__column {
+      padding-inline: 60px;
+      padding-block: 50px;
+      border-radius: 10px;
+    }
+    &__btn {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__select {
+      padding: 13px 40px;
+    }
+  }
+  .last {
+    margin-top: -40px;
+  }
+  // End Plan
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .section__flex {
     flex-direction: column;
   }
   .container {
     row-gap: 8rem;
   }
+  p {
+    line-height: 1.7;
+  }
+  h2 {
+    line-height: 1.7;
+  }
   .section {
+    grid-template-columns: 1fr;
     padding: 0;
   }
+  // Start Header
+  .header {
+    &__navReg {
+      max-width: 100%;
+    }
+    &__logoBox {
+      width: 25%;
+    }
+  }
+  .navigation {
+    &__list {
+      gap: 20px;
+    }
+  }
+  .logo {
+    &__img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .register {
+    width: 50%;
+    gap: 30px;
+  }
+  .signup {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  // End header
+  // Start Intro
+  .intro {
+    column-gap: 30px;
+    &__heading {
+      font-size: var(--font-size-40);
+      line-height: 1.6;
+    }
+    &__btn {
+      padding-inline: 50px;
+      margin-top: 40px;
+    }
+    &__img {
+      max-width: 75%;
+    }
+  }
+  // Start counter
+  .counter {
+    max-width: 85%;
+    &__column {
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child)::after {
+        height: 120px;
+        left: 180px;
+        top: -25px;
+      }
+    }
+    &__img {
+      width: 35px;
+      height: 35px;
+    }
+    &__countImg {
+      font-size: var(--font-size-22);
+    }
+    &__count {
+      font-size: var(--font-size-18);
+    }
+  }
+  // End counter
+  // End Intro
+  // Start Features
+  .features {
+    column-gap: 20px;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: start;
+      align-items: start;
+    }
+    &__img {
+      max-width: 80%;
+    }
+    &__heading {
+      max-width: 80%;
+    }
+    &__list {
+      gap: 10px;
+    }
+    &__item {
+      gap: 10px;
+    }
+    &__image {
+      width: 20px;
+      height: 20px;
+    }
+    &__p {
+      max-width: 100%;
+    }
+    &__para {
+      width: 70%;
+      margin-top: 10px;
+    }
+  }
+  // End Features
+  // Start Plan
+  .plan {
+    width: 100%;
+    &::before {
+      width: 100%;
+    }
+  }
+  .categories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+    &__column {
+      padding-inline: 25px;
+      padding-block: 50px;
+      border-radius: 10px;
+    }
+    &__btn {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__select {
+      padding: 13px 40px;
+    }
+  }
+  .last {
+    margin-top: -40px;
+  }
+  // End Plan
+  // Start WorldGlobal
+  .global {
+    &__images {
+      max-width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__image {
+      display: flex;
+    }
+  }
+  // End WorldGlobal
+  // Start Testamonials
+  .testamonials {
+    width: 100%;
+    &__columns {
+      display: flex;
+      gap: 10px;
+
+      // display: grid;
+      // grid-template-columns: repeat(3, 210px);
+      // width: 100%;
+      // column-gap: 30px;
+      // margin-bottom: 60px;
+    }
+    &__column {
+      border: 2px solid var(--border-secodColor);
+      padding: 10px;
+      border-radius: 10px;
+      width: 28%;
+    }
+    &__heads {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+    &__box {
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+    &__nameImage {
+      width: 40px;
+      height: 40px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__country {
+      font-size: var(--font-size-14);
+      font-weight: var(--font-weight-regular);
+    }
+    &__columnRating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &__content {
+      line-height: 1.6;
+    }
+    &__arows {
+      display: flex;
+      cursor: pointer;
+      gap: 0;
+      margin-top: -20px;
+      width: 27%;
+    }
+    &__arrow {
+      width: 40px;
+      height: 40px;
+    }
+    &__arrowRight {
+      width: 100px;
+      height: 100px;
+      margin-top: -20px;
+    }
+  }
+  // End Testamonials
 }
+
 @media (max-width: 500px) {
   .section {
     padding: 0;
