@@ -1168,9 +1168,9 @@ span {
   }
   .counter::after {
     height: 130px;
-    left: 25px;
-    top: 28px;
-    width: 90%;
+    left: 0;
+    top: 30px;
+    width: 100%;
   }
   .counter__column {
     display: flex;
@@ -1178,7 +1178,9 @@ span {
     position: relative;
   }
   .counter__column:not(:last-child)::after {
-    content: none;
+    height: 80px;
+    left: 100px;
+    top: -20px;
   }
   .counter__img {
     width: 35px;
@@ -1261,6 +1263,12 @@ span {
   }
   .categories__column {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 30px;
+    padding-block: 40px;
   }
   .categories__item {
     gap: 10px;
@@ -1311,6 +1319,12 @@ span {
     gap: 40px;
     width: 100%;
     margin-bottom: 20px;
+  }
+  .testamonials__column {
+    width: 90%;
+    border: 2px solid var(--border-secodColor);
+    padding: 30px 20px;
+    border-radius: 10px;
   }
   .testamonials__slider {
     display: none;
