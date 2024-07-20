@@ -565,7 +565,7 @@
     gap: 30px;
     &::after {
       height: 130px;
-      left: 0;
+      left: 10px;
       top: 30px;
       width: 100%;
     }
@@ -606,12 +606,17 @@
     &__img {
       max-width: 100%;
     }
+    &__para {
+      text-align: center;
+    }
     &__text {
       gap: 10px;
       width: 100%;
     }
     &__list {
       gap: 10px;
+      padding-left: 10px;
+      margin-top: 20px;
     }
     &__item {
       gap: 10px;
@@ -725,12 +730,14 @@
     &__columns {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 40px;
       width: 100%;
       margin-bottom: 20px;
     }
     &__column {
-      width: 90%;
+      width: 100%;
       border: 2px solid var(--border-secodColor);
       padding: 30px 20px;
       border-radius: 10px;
