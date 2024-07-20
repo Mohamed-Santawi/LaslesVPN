@@ -1100,6 +1100,7 @@ span {
     align-self: center;
     cursor: pointer;
     z-index: 0;
+    margin-right: 10px;
   }
   .register {
     display: flex;
@@ -1232,6 +1233,7 @@ span {
   }
   .features__para {
     text-align: center;
+    margin: 0 auto;
   }
   .features__text {
     gap: 10px;
@@ -1239,7 +1241,7 @@ span {
   }
   .features__list {
     gap: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     margin-top: 20px;
   }
   .features__item {
@@ -1251,6 +1253,7 @@ span {
   }
   .features__heading {
     text-align: center;
+    margin: 20px auto 0;
   }
   .plan {
     display: grid;
@@ -1359,6 +1362,9 @@ span {
   }
   .testamonials__slider {
     display: none;
+  }
+  .testamonials .firstActive {
+    border-color: var(--color-button);
   }
   .footer {
     margin-top: 80px;
