@@ -1051,6 +1051,9 @@ span {
   }
 }
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   .section {
     padding: 0;
   }
@@ -1100,7 +1103,7 @@ span {
     align-self: center;
     cursor: pointer;
     z-index: 0;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .register {
     display: flex;
