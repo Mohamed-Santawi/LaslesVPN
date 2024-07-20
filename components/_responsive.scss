@@ -144,9 +144,10 @@
   .header {
     &__navReg {
       max-width: 100%;
+      gap: 50px;
     }
     &__logoBox {
-      width: 25%;
+      width: 50%;
     }
   }
   .navigation {
@@ -161,7 +162,7 @@
     }
   }
   .register {
-    width: 50%;
+    width: 100%;
     gap: 30px;
   }
   .signup {
@@ -182,12 +183,12 @@
       margin-top: 40px;
     }
     &__img {
-      max-width: 75%;
+      max-width: 100%;
     }
   }
   // Start counter
   .counter {
-    max-width: 85%;
+    max-width: 95%;
     &__column {
       justify-content: center;
       align-items: center;
@@ -221,10 +222,10 @@
       align-items: start;
     }
     &__img {
-      max-width: 80%;
+      max-width: 100%;
     }
     &__heading {
-      max-width: 80%;
+      max-width: 90%;
     }
     &__list {
       gap: 10px;
@@ -240,7 +241,7 @@
       max-width: 100%;
     }
     &__para {
-      width: 70%;
+      width: 90%;
       margin-top: 10px;
     }
   }
@@ -281,7 +282,7 @@
   // Start WorldGlobal
   .global {
     &__images {
-      max-width: 85%;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -297,18 +298,10 @@
     &__columns {
       display: flex;
       gap: 10px;
-
-      // display: grid;
-      // grid-template-columns: repeat(3, 210px);
-      // width: 100%;
-      // column-gap: 30px;
-      // margin-bottom: 60px;
     }
     &__column {
-      border: 2px solid var(--border-secodColor);
       padding: 10px;
-      border-radius: 10px;
-      width: 28%;
+      width: 100%;   
     }
     &__heads {
       display: flex;
@@ -341,12 +334,18 @@
     &__content {
       line-height: 1.6;
     }
+    &__slider {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__points {
+      width: 100%;
+    }
     &__arows {
       display: flex;
-      cursor: pointer;
-      gap: 0;
-      margin-top: -20px;
-      width: 27%;
+      justify-content: end;
+      width: 100%;
     }
     &__arrow {
       width: 40px;
@@ -359,6 +358,30 @@
     }
   }
   // End Testamonials
+  // Start Footer
+  .footer {
+    &__subscribe {
+      width: 70%;
+      padding: 20px 25px;
+    }
+    &__btn {
+      padding: 17.5px 25px;
+      width: fit-content;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      width: 100%;
+    }
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3,100px);
+      column-gap: 25px;
+    }
+  }
+
+  // End Footer
 }
 
 @media (max-width: 500px) {

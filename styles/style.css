@@ -836,9 +836,10 @@ span {
   }
   .header__navReg {
     max-width: 100%;
+    gap: 50px;
   }
   .header__logoBox {
-    width: 25%;
+    width: 50%;
   }
   .navigation__list {
     gap: 20px;
@@ -848,7 +849,7 @@ span {
     height: 30px;
   }
   .register {
-    width: 50%;
+    width: 100%;
     gap: 30px;
   }
   .signup {
@@ -868,10 +869,10 @@ span {
     margin-top: 40px;
   }
   .intro__img {
-    max-width: 75%;
+    max-width: 100%;
   }
   .counter {
-    max-width: 85%;
+    max-width: 95%;
   }
   .counter__column {
     justify-content: center;
@@ -903,10 +904,10 @@ span {
     align-items: start;
   }
   .features__img {
-    max-width: 80%;
+    max-width: 100%;
   }
   .features__heading {
-    max-width: 80%;
+    max-width: 90%;
   }
   .features__list {
     gap: 10px;
@@ -922,7 +923,7 @@ span {
     max-width: 100%;
   }
   .features__para {
-    width: 70%;
+    width: 90%;
     margin-top: 10px;
   }
   .plan {
@@ -957,7 +958,7 @@ span {
     margin-top: -40px;
   }
   .global__images {
-    max-width: 85%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -973,10 +974,8 @@ span {
     gap: 10px;
   }
   .testamonials__column {
-    border: 2px solid var(--border-secodColor);
     padding: 10px;
-    border-radius: 10px;
-    width: 28%;
+    width: 100%;
   }
   .testamonials__heads {
     display: flex;
@@ -1009,12 +1008,18 @@ span {
   .testamonials__content {
     line-height: 1.6;
   }
+  .testamonials__slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .testamonials__points {
+    width: 100%;
+  }
   .testamonials__arows {
     display: flex;
-    cursor: pointer;
-    gap: 0;
-    margin-top: -20px;
-    width: 27%;
+    justify-content: end;
+    width: 100%;
   }
   .testamonials__arrow {
     width: 40px;
@@ -1024,6 +1029,25 @@ span {
     width: 100px;
     height: 100px;
     margin-top: -20px;
+  }
+  .footer__subscribe {
+    width: 70%;
+    padding: 20px 25px;
+  }
+  .footer__btn {
+    padding: 17.5px 25px;
+    width: fit-content;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+  }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 25px;
   }
 }
 @media (max-width: 500px) {
