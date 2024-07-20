@@ -1354,7 +1354,7 @@ span {
     margin-bottom: 20px;
   }
   .testamonials__column {
-    width: 100%;
+    width: 95%;
     border: 2px solid var(--border-secodColor);
     padding: 30px 20px;
     border-radius: 10px;
